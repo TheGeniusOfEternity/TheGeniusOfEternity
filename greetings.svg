@@ -14,9 +14,7 @@
 				  }
 				}
 				.wrapper {
-				  width: 100%;
-		                  display: flex;
-		                  align-items: center;
+				  background-color: red;
 		                }
 
 				/* @keyframes duration | easing-function | delay |
@@ -28,12 +26,12 @@
 		                  border-right: 3px solid;
 		                  font-family: monospace;
 		                  font-size: 2em;
-				  animation-name: typing-first, blink, typing-second;
-				  animation-timing-function: steps(17), step-end, steps(28);
-				  animation-duration: 1.5s, 1s, 3s;
-				  animation-delay: 0s, 1.5s, 4.5s; /* Adjust delays so animations run sequentially */
+				  animation-name: typing-first, blink, typing-second, blink;
+				  animation-timing-function: steps(17), step-end, steps(28), step-end;
+				  animation-duration: 1.5s, 1s, 3s, 1s;
+				  animation-delay: 0s, 1.5s, 4.5s, 7.5s; /* Adjust delays so animations run sequentially */
 				  animation-fill-mode: forwards; /* Keeps the final state of each animation */
-				  animation-iteration-count: 1, 3, 1; /* Run each animation once */
+				  animation-iteration-count: 1, 3, 1, infinite; 
 		                }
 		                
 		                @keyframes typing-first {
@@ -55,6 +53,8 @@
 		                    border-color: transparent;
 		                  }
 		                }
+
+
 
 			</style>
 			<div class="wrapper">
