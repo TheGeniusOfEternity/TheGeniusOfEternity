@@ -1,3 +1,7 @@
+<div>
+  <img src="test.svg" width="800" height="400">
+</div>
+
 <div align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=TheGeniusOfEternity&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=material-palenight&hide_border=true&custom_title=Activity" alt="stats graph"  height="200" />
   <img width="25">
