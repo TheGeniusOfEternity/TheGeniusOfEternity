@@ -3,41 +3,53 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
 				.wrapper {
-                  height: 100vh;
-                  display: flex;
-                  align-items: center;
-                }
-                
-                .typing-demo {
-                  width: 34ch;
-                  animation: typing 3s steps(34);
-                  white-space: nowrap;
-                  overflow: hidden;
-                  border-right: 3px solid;
-                  font-family: monospace;
-                  font-size: 2em;
-                }
-                
-                @keyframes typing {
-                  from {
-                    width: 0;
-                  }
-                  to {
-                    width: 34ch;
-                  }
-                }
-                
-                @keyframes blink {
-                  50% {
-                    border-color: transparent;
-                  }
-                }
+		                  height: 100vh;
+		                  display: flex;
+		                  align-items: center;
+		                }
+
+				/* @keyframes duration | easing-function | delay |
+				iteration-count | direction | fill-mode | play-state | name */
+		                
+		                .typing-demo {
+		                  white-space: nowrap;
+		                  overflow: hidden;
+		                  border-right: 3px solid;
+		                  font-family: monospace;
+		                  font-size: 2em;
+				  animation-name: typing-first, blink, typing-second;
+				  animation-timing-function: steps(17), step-end, steps(28);
+				  animation-duration: 1.5s, 1s, 3s;
+				  animation-delay: 0s, 1.5s, 4.5s; /* Adjust delays so animations run sequentially */
+				  animation-fill-mode: forwards; /* Keeps the final state of each animation */
+				  animation-iteration-count: 1, 3, 1; /* Run each animation once */
+		                }
+		                
+		                @keyframes typing-first {
+		                  from {
+		                    width: 0;
+		                  }
+				  to {
+				    width: 17ch;
+				  }
+		                }
+				@keyframes typing-second {
+				  to {
+				    width: 45ch;
+				  }
+		                }
+		
+		                @keyframes blink {
+		                  50% {
+		                    border-color: transparent;
+		                  }
+		                }
 
 			</style>
 			<div class="wrapper">
-				<div class="typing-demo">
-                    Hello, I am Maksim, WebDev enjoer!
-                </div>
+			 <div class="typing-demo">
+                    	  Time is endless, but nothing lasts forever...
+                	 </div>
 			</div>
 		</div>
 	</foreignObject>
