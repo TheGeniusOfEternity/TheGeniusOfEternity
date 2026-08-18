@@ -4,7 +4,7 @@
 
 <div align="left">
   <img src="https://widgecode.vercel.app/api/public/widgets/gh-stats-github-stats-github-langs-999353/image.svg" alt="Github ReadMe" width="420" height="220.5" />
-  <img width="12" />
+  <img width="5" />
   <img src="https://widgecode.vercel.app/api/public/widgets/leetcode-stats-leetcode-stats-2d754e/image.svg" alt="LeetCode" width="420" height="220.5" />
 </div>
 
